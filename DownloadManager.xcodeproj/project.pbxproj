@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE062BA027B2861C00666E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062B9F27B2861C00666E70 /* AppDelegate.swift */; };
+		CE062BA227B2861C00666E70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062BA127B2861C00666E70 /* SceneDelegate.swift */; };
+		CE062BA927B2862C00666E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE062BA827B2862C00666E70 /* Assets.xcassets */; };
+		CE062BAC27B2862C00666E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE062BAA27B2862C00666E70 /* LaunchScreen.storyboard */; };
+		CE062BBE27B286BF00666E70 /* DownloadListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062BB627B286BE00666E70 /* DownloadListView.swift */; };
+		CE062BBF27B286BF00666E70 /* DownloadListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062BB727B286BE00666E70 /* DownloadListPresenter.swift */; };
+		CE062BC027B286BF00666E70 /* DownloadListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062BB827B286BE00666E70 /* DownloadListRouter.swift */; };
+		CE062BC127B286BF00666E70 /* DownloadListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062BB927B286BE00666E70 /* DownloadListAssembly.swift */; };
+		CE062BC227B286BF00666E70 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062BBA27B286BE00666E70 /* NetworkService.swift */; };
+		CE062BC327B286BF00666E70 /* DownloadListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062BBB27B286BE00666E70 /* DownloadListViewController.swift */; };
+		CE062BC427B286BF00666E70 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062BBC27B286BE00666E70 /* NetworkError.swift */; };
+		CE062BC527B286BF00666E70 /* DownloadListNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE062BBD27B286BE00666E70 /* DownloadListNavigation.swift */; };
+		CE1A781D27B4CDFA00571937 /* FileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A781C27B4CDFA00571937 /* FileDTO.swift */; };
+		CE2D668127B3820800B23128 /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D668027B3820800B23128 /* FileModel.swift */; };
+		CE2D668A27B38DEB00B23128 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D668927B38DEB00B23128 /* Constraints.swift */; };
+		CE2D668E27B38FD800B23128 /* DownloadListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D668D27B38FD800B23128 /* DownloadListCell.swift */; };
+		CE2D669127B38FEC00B23128 /* DownloadListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D669027B38FEC00B23128 /* DownloadListTableView.swift */; };
+		CEAB00EC27B9F48800C38885 /* UserSettingsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB00EB27B9F48800C38885 /* UserSettingsStorage.swift */; };
+		CEF661B627B80AEB008A6284 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF661AE27B80AEB008A6284 /* UserSettings.swift */; };
+		CEF661B727B80AEB008A6284 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF661AF27B80AEB008A6284 /* SettingsPresenter.swift */; };
+		CEF661B827B80AEB008A6284 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF661B027B80AEB008A6284 /* SettingsView.swift */; };
+		CEF661B927B80AEB008A6284 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF661B127B80AEB008A6284 /* SettingsViewController.swift */; };
+		CEF661BA27B80AEB008A6284 /* SettingsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF661B227B80AEB008A6284 /* SettingsNavigation.swift */; };
+		CEF661BB27B80AEB008A6284 /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF661B327B80AEB008A6284 /* SettingsAssembly.swift */; };
+		CEF661BC27B80AEB008A6284 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF661B427B80AEB008A6284 /* SettingsRouter.swift */; };
+		CEF661CF27B8107D008A6284 /* SettingsConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF661CE27B8107D008A6284 /* SettingsConstraints.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE062B9C27B2861C00666E70 /* DownloadManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE062B9F27B2861C00666E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE062BA127B2861C00666E70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE062BA827B2862C00666E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE062BAB27B2862C00666E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE062BAD27B2862C00666E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE062BB627B286BE00666E70 /* DownloadListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadListView.swift; sourceTree = "<group>"; };
+		CE062BB727B286BE00666E70 /* DownloadListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadListPresenter.swift; sourceTree = "<group>"; };
+		CE062BB827B286BE00666E70 /* DownloadListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadListRouter.swift; sourceTree = "<group>"; };
+		CE062BB927B286BE00666E70 /* DownloadListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadListAssembly.swift; sourceTree = "<group>"; };
+		CE062BBA27B286BE00666E70 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CE062BBB27B286BE00666E70 /* DownloadListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadListViewController.swift; sourceTree = "<group>"; };
+		CE062BBC27B286BE00666E70 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CE062BBD27B286BE00666E70 /* DownloadListNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadListNavigation.swift; sourceTree = "<group>"; };
+		CE1A781C27B4CDFA00571937 /* FileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDTO.swift; sourceTree = "<group>"; };
+		CE2D668027B3820800B23128 /* FileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
+		CE2D668927B38DEB00B23128 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		CE2D668D27B38FD800B23128 /* DownloadListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadListCell.swift; sourceTree = "<group>"; };
+		CE2D669027B38FEC00B23128 /* DownloadListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadListTableView.swift; sourceTree = "<group>"; };
+		CEAB00EB27B9F48800C38885 /* UserSettingsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsStorage.swift; sourceTree = "<group>"; };
+		CEF661AE27B80AEB008A6284 /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		CEF661AF27B80AEB008A6284 /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		CEF661B027B80AEB008A6284 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CEF661B127B80AEB008A6284 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CEF661B227B80AEB008A6284 /* SettingsNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavigation.swift; sourceTree = "<group>"; };
+		CEF661B327B80AEB008A6284 /* SettingsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
+		CEF661B427B80AEB008A6284 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		CEF661CE27B8107D008A6284 /* SettingsConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConstraints.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE062B9927B2861C00666E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE062B9327B2861C00666E70 = {
+			isa = PBXGroup;
+			children = (
+				CE062B9E27B2861C00666E70 /* DownloadManager */,
+				CE062B9D27B2861C00666E70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE062B9D27B2861C00666E70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE062B9C27B2861C00666E70 /* DownloadManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE062B9E27B2861C00666E70 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D667827B3805500B23128 /* Application */,
+				CE2D667427B37DCA00B23128 /* Modules */,
+				CE062BA827B2862C00666E70 /* Assets.xcassets */,
+				CE062BAA27B2862C00666E70 /* LaunchScreen.storyboard */,
+				CE062BAD27B2862C00666E70 /* Info.plist */,
+			);
+			path = DownloadManager;
+			sourceTree = "<group>";
+		};
+		CE062BC827B2873300666E70 /* DownloadList */ = {
+			isa = PBXGroup;
+			children = (
+				CE062BB927B286BE00666E70 /* DownloadListAssembly.swift */,
+				CE062BB827B286BE00666E70 /* DownloadListRouter.swift */,
+				CEF661A227B7B278008A6284 /* NetworkService */,
+				CE2D668327B3820D00B23128 /* Model */,
+				CE2D667627B37DE400B23128 /* View */,
+				CE2D668527B3821D00B23128 /* Presenter */,
+			);
+			path = DownloadList;
+			sourceTree = "<group>";
+		};
+		CE2D667427B37DCA00B23128 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CEF661AA27B80A8C008A6284 /* Settings */,
+				CE062BC827B2873300666E70 /* DownloadList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE2D667627B37DE400B23128 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D668927B38DEB00B23128 /* Constraints.swift */,
+				CE062BBB27B286BE00666E70 /* DownloadListViewController.swift */,
+				CE062BBD27B286BE00666E70 /* DownloadListNavigation.swift */,
+				CE062BB627B286BE00666E70 /* DownloadListView.swift */,
+				CE2D669027B38FEC00B23128 /* DownloadListTableView.swift */,
+				CE2D668D27B38FD800B23128 /* DownloadListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE2D667827B3805500B23128 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CE062B9F27B2861C00666E70 /* AppDelegate.swift */,
+				CE062BA127B2861C00666E70 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CE2D668327B3820D00B23128 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D668027B3820800B23128 /* FileModel.swift */,
+				CE1A781C27B4CDFA00571937 /* FileDTO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE2D668527B3821D00B23128 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE062BB727B286BE00666E70 /* DownloadListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEF661A227B7B278008A6284 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				CE062BBA27B286BE00666E70 /* NetworkService.swift */,
+				CE062BBC27B286BE00666E70 /* NetworkError.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		CEF661AA27B80A8C008A6284 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CEF661B327B80AEB008A6284 /* SettingsAssembly.swift */,
+				CEF661B427B80AEB008A6284 /* SettingsRouter.swift */,
+				CEF661CA27B80D80008A6284 /* Model */,
+				CEF661C627B80D6D008A6284 /* View */,
+				CEF661C827B80D76008A6284 /* Presenter */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CEF661C627B80D6D008A6284 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEF661CE27B8107D008A6284 /* SettingsConstraints.swift */,
+				CEF661B227B80AEB008A6284 /* SettingsNavigation.swift */,
+				CEF661B127B80AEB008A6284 /* SettingsViewController.swift */,
+				CEF661B027B80AEB008A6284 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEF661C827B80D76008A6284 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEF661AF27B80AEB008A6284 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEF661CA27B80D80008A6284 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEF661AE27B80AEB008A6284 /* UserSettings.swift */,
+				CEAB00EB27B9F48800C38885 /* UserSettingsStorage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE062B9B27B2861C00666E70 /* DownloadManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE062BB027B2862D00666E70 /* Build configuration list for PBXNativeTarget "DownloadManager" */;
+			buildPhases = (
+				CE062B9827B2861C00666E70 /* Sources */,
+				CE062B9927B2861C00666E70 /* Frameworks */,
+				CE062B9A27B2861C00666E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownloadManager;
+			productName = DownloadManager;
+			productReference = CE062B9C27B2861C00666E70 /* DownloadManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE062B9427B2861C00666E70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CE062B9B27B2861C00666E70 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CE062B9727B2861C00666E70 /* Build configuration list for PBXProject "DownloadManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE062B9327B2861C00666E70;
+			productRefGroup = CE062B9D27B2861C00666E70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE062B9B27B2861C00666E70 /* DownloadManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE062B9A27B2861C00666E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE062BAC27B2862C00666E70 /* LaunchScreen.storyboard in Resources */,
+				CE062BA927B2862C00666E70 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE062B9827B2861C00666E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE062BC427B286BF00666E70 /* NetworkError.swift in Sources */,
+				CEF661B727B80AEB008A6284 /* SettingsPresenter.swift in Sources */,
+				CE062BA027B2861C00666E70 /* AppDelegate.swift in Sources */,
+				CEF661BA27B80AEB008A6284 /* SettingsNavigation.swift in Sources */,
+				CE062BC127B286BF00666E70 /* DownloadListAssembly.swift in Sources */,
+				CEF661CF27B8107D008A6284 /* SettingsConstraints.swift in Sources */,
+				CE062BBE27B286BF00666E70 /* DownloadListView.swift in Sources */,
+				CE062BC027B286BF00666E70 /* DownloadListRouter.swift in Sources */,
+				CE2D668E27B38FD800B23128 /* DownloadListCell.swift in Sources */,
+				CEAB00EC27B9F48800C38885 /* UserSettingsStorage.swift in Sources */,
+				CE062BBF27B286BF00666E70 /* DownloadListPresenter.swift in Sources */,
+				CE062BA227B2861C00666E70 /* SceneDelegate.swift in Sources */,
+				CEF661B627B80AEB008A6284 /* UserSettings.swift in Sources */,
+				CE062BC527B286BF00666E70 /* DownloadListNavigation.swift in Sources */,
+				CE062BC327B286BF00666E70 /* DownloadListViewController.swift in Sources */,
+				CE1A781D27B4CDFA00571937 /* FileDTO.swift in Sources */,
+				CEF661BC27B80AEB008A6284 /* SettingsRouter.swift in Sources */,
+				CE2D669127B38FEC00B23128 /* DownloadListTableView.swift in Sources */,
+				CE2D668A27B38DEB00B23128 /* Constraints.swift in Sources */,
+				CEF661BB27B80AEB008A6284 /* SettingsAssembly.swift in Sources */,
+				CE2D668127B3820800B23128 /* FileModel.swift in Sources */,
+				CEF661B927B80AEB008A6284 /* SettingsViewController.swift in Sources */,
+				CE062BC227B286BF00666E70 /* NetworkService.swift in Sources */,
+				CEF661B827B80AEB008A6284 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE062BAA27B2862C00666E70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE062BAB27B2862C00666E70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE062BAE27B2862C00666E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE062BAF27B2862D00666E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE062BB127B2862D00666E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.DownloadManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE062BB227B2862D00666E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.DownloadManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE062B9727B2861C00666E70 /* Build configuration list for PBXProject "DownloadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE062BAE27B2862C00666E70 /* Debug */,
+				CE062BAF27B2862D00666E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE062BB027B2862D00666E70 /* Build configuration list for PBXNativeTarget "DownloadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE062BB127B2862D00666E70 /* Debug */,
+				CE062BB227B2862D00666E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE062B9427B2861C00666E70 /* Project object */;
+}
